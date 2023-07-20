@@ -1,5 +1,5 @@
 {
-  "name": "autodesk/forge-client",
+  "name": "blinkio/autodesk-forge-client",
   "description": "",
   "keywords": [
     "swagger",
@@ -15,12 +15,19 @@
       "homepage": "https://github.com/Autodesk-Forge"
     }
   ],
+  "repositories": [
+    {
+      "url": "https://github.com/Blinkio/autodesk-core-php-client.git",
+      "type": "git",
+      "reference":"master"
+    }
+  ],
   "require": {
     "php": ">=5.4",
     "ext-curl": "*",
     "ext-json": "*",
     "ext-mbstring": "*",
-    "autodesk/core": "^1.0"
+    "blinkio/autodesk-core-php-client": "master"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.8",
